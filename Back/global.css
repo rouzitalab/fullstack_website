@@ -1,0 +1,43 @@
+*{
+	font-family: courier;
+	color: white;
+}
+body{
+	background-color: #373146;
+}
+input{
+	background-color:#3d2579;
+}
+table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	tr:nth-of-type(odd) { 
+		background: #373146; 
+	}
+	
+	tr:nth-of-type(even) { 
+		background: #191922; 
+
+	}
+th { 
+		background: #606860; 
+		color: white; 
+		font-weight: bold; 
+	}
+
+td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: center; 
+	}
+	
+.righty {
+	position: relative;
+	float: right;
+	margin-right: 1%;
+}
+select{
+	background-color:#3d2579;
+	color: white;
+}
