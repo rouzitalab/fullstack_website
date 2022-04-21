@@ -1,4 +1,4 @@
 # Full-stack Website
 The full stack implementation of a website
-Front-end: JavaScript, HTML, CSS
-Back-end: PHP
+<br><br> Front-end: <b> JavaScript, HTML, CSS </b>
+<br> Back-end:<b> PHP </b>
