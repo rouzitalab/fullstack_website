@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'IranianSans';
+  src: url('Fonts/IranianSans.eot'); /* IE9 Compat Modes */
+  src: url('Fonts/IranianSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Fonts/IranianSans.woff') format('woff'), /* Modern Browsers */
+       url('Fonts/IranianSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Fonts/IranianSans.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.main {
+
+position:absolute;
+left:11%;
+top:10%;
+padding-right:13%;
+width:960px;
+height:auto;
+
+}
+
+p,#name-fa,#name-en{
+color:rgb(80,128,151);
+font-family: 'IranianSans', 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size:0.8em;
+}
+.name, .name-1, #text-mid-1{
+	direction:ltr;
+color:rgb(80,128,151);
+font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size:0.8em;
+}
+
+.text-slider{
+//z-index:6;
+float:right;
+width:285px;
+margin-top: 100px;
+
+
+}
+
+.text-slider_0{
+z-index:60;
+float:right;
+width:285px;
+height:425px;
+position:relative;
+top:16px;
+left:42px;
+background-color:white;
+}
+#top-text-slider {
+width:auto;
+height:32px;
+	background-image: url("Small-BG.jpg");
+    background-repeat: repeat-y;
+
+}
+#middle-text-slider{
+	height: 500px;
+text-align:right;
+position:relative;
+top:-1%;
+background-image: url("BIG-BG.jpg");
+background-repeat: repeat-y;
+}
+
+
+
+#name-en{
+padding : 3%;
+float:left;
+margin-left:10%;
+}
+
+#name-fa{
+padding : 3%;
+float:right;
+margin-right:10%;
+}
+
+.image-slider{
+
+
+width:675px;
+position:relative;
+left:0px;
+
+
+
+}
+
+.img1 {
+position:absolute;
+z-index:0;
+left:0px;
+
+   
+}
+
+.img2 {
+position:absolute;
+
+z-index:1;
+left:75px;
+
+
+}
+
+.img3 {
+position:absolute;
+
+z-index: 2;
+left:150px;
+
+}
+
+.img4 {
+position:absolute;
+z-index: 3;
+left:225px;
+
+}
+
+.img5 {
+position:absolute;
+
+z-index: 4;
+left:300px;
+
+}
+
+.img6 {
+position:absolute;
+
+z-index: 5;
+left:375px;
+ 
+}
+
+
+.shadow-box{
+-webkit-box-shadow: -10px 0px 23px -4px rgba(31,29,31,1);
+-moz-box-shadow: -10px 0px 23px -4px rgba(31,29,31,1);
+box-shadow: -10px 0px 23px -4px rgba(31,29,31,1);
+}
+
+#tint{
+	position: absolute;
+	cursor: pointer;
+	float:left;
+}
+
+#tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(128,128,128, 0.7);
+}
+
+.div-main{
+position:absolute;
+top:550px;
+left:14.3%;
+width:960px;
+height:auto;
+}
+.img6:hover{
+
+display="none";
+
+}

@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<!-- <script src="Ajax.js"></script> -->
+<script src="jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	var delay = 10000;
+	var nextDelay = 500;
+	$(document).ready(function(){
+		//var off1 = $('#a1').offset();
+		//var off2 = $('#b1').offset();
+	//	var off3 = $('#c1').offset();
+		//var off4 = $('#d1').offset();
+		$( window ).resize(function() {
+ 	//	var off1 = $('#a1').offset();
+		//var off4 = $('#b1').offset();
+		//var off2 = $('#c1').offset();
+		//var off3 = $('#d1').offset();
+		//$(".view1").offset({ top: off1.top, left: off1.left});
+
+		});
+		
+	//	$(".view1").offset({ top: off1.top, left: off1.left});
+		//$(".view2").offset({ top: off2.top, left: off2.left});
+		//$(".view3").offset({ top: off3.top, left: off3.left});
+		//$(".view4").offset({ top: off4.top, left: off4.left});
+		//<div style='display: table-row;'><div style='display:table-cell;'>Text</div><div style='display:table-cell;'>Text</div></div><div style='display:table-row'><div style='display:table-cell'>Text</div></div>
+
+
+		$('#a11').hover(function() {
+    		$('#a1').attr('flipped','flipped');
+    		$('.view11').css('height',79);
+    		$('.view11').html("<br/>Text");
+    		$('.view12').css('height',79);
+    		$('.view12').html("<br/>Text");
+    		$('.view13').css('height',79);
+    		$('.view13').html("<br/>Text");
+    		
+    	});
+    	$('#a11').mouseleave(function() {
+    		$('#a1').removeAttr('flipped');
+    		$('.view11').html(" ");
+    		$('.view11').css('height',0);
+    		$('.view12').html(" ");
+    		$('.view12').css('height',0);
+    		$('.view13').html(" ");
+    		$('.view13').css('height',0);
+    	});
+    	$('#b11').hover(function() {
+    		$('#b1').attr('flipped','flipped');
+    		$('.view4').css('height',160);
+    		$('.view4').html("<br/><br/>Text");
+    		
+    	});
+    	$('#b11').mouseleave(function() {
+    		$('#b1').removeAttr('flipped');
+    		$('.view4').html(" ");
+    		$('.view4').css('height',0);
+    	});
+    	$('#c11').hover(function() {
+    		$('#c1').attr('flipped','flipped');
+    		$('.view2').css('height',160);
+    		$('.view2').html("<br/><br/>Text");
+    		
+    	});
+    	$('#c11').mouseleave(function() {
+    		$('#c1').removeAttr('flipped');
+    		$('.view2').html(" ");
+    		$('.view2').css('height',0);
+    	});
+    	$('#d11').hover(function() {
+    		$('#d1').attr('flipped','flipped');
+    		$('.view3').css('height',160);
+    		$('.view3').html("<br/><br/>Text");
+    		
+    	});
+    	$('#d11').mouseleave(function() {
+    		$('#d1').removeAttr('flipped');
+    		$('.view3').html(" ");
+    		$('.view3').css('height',0);
+    	});
+	});
+	
+	setTimeout(function(){$(document).ready(function(){
+ 		var imagesClone = $('#images').clone();
+ 		
+		$('#f1-office').attr('disabled', true);
+    	$('#e11').attr('flipped','flipped');
+		$('#e11').attr("src", "pictures/e1/e11.jpg");
+		
+		setTimeout(function(){
+    		$('#e12').attr('flipped','flipped');
+   			$('#e12').attr("src", "pictures/e1/e12.jpg");
+    		setTimeout(function(){
+			
+   				$('#e13').attr("src", "pictures/e1/e13.jpg");
+    			$('#e13').attr('flipped','flipped');
+    			
+    			setTimeout(function(){
+			
+   					$('#e14').attr("src", "pictures/e1/e14.jpg");
+    				$('#e14').attr('flipped','flipped');
+    				
+    				setTimeout(function(){
+			
+   						$('#e15').attr("src", "pictures/e1/e15.jpg");
+    					$('#e15').attr('flipped','flipped');
+    					
+    					setTimeout(function(){
+			
+   							$('#e16').attr("src", "pictures/e1/e16.jpg");
+    						$('#e16').attr('flipped','flipped');
+    						
+    						setTimeout(function(){
+			
+   								$('#e17').attr("src", "pictures/e1/e17.jpg");
+    							$('#e17').attr('flipped','flipped');
+    							
+    							setTimeout(function(){
+			
+   									$('#e18').attr("src", "pictures/e1/e18.jpg");
+    								$('#e18').attr('flipped','flipped');
+    								
+    								setTimeout(function(){
+			
+   										$('#e19').attr("src", "pictures/e1/e19.jpg");
+    									$('#e19').attr('flipped','flipped');
+    								
+    									setTimeout(function(){
+			
+   											$('#e110').attr("src", "pictures/e1/e110.jpg");
+    										$('#e110').attr('flipped','flipped');
+
+    											},nextDelay);
+    										},nextDelay);
+    								},nextDelay);
+ 							},nextDelay);
+ 						},nextDelay);
+ 					},nextDelay);
+ 				},nextDelay);
+			},nextDelay);
+ 		},nextDelay);
+
+ 			$('#f1-office').click(function(){
+		$('#Text').attr("src", "pictures/Text.jpg");
+		$('#Text').attr("src", "pictures/Text.jpg");
+    	$('#e18').css('display','none');
+    	$('.Text').css('display','inline');
+    	$('#e110').css('display','none');
+    	$('.Text').css('display','inline');
+ 		$('#e17').width(372);
+    	$('#e17').height(277);
+    	$('#e13').css('left',0);
+    	$('#e11').width(188);
+    	$('#e11').height(137);
+    	$('#e11').css('left',0);
+    	$('#e11').attr('align','top');
+    	$('#e19').width(372);
+    	$('#e19').height(277);
+    $('#e14').css('left',0);
+    	$('#e15').css('left',0);
+    	$('#e16').css('left',0);
+    	$('#e12').width(188);
+    	$('#e12').height(137);
+    	$('#e12').css('left',0);
+    	$('#e12').attr('align','top');
+    	$('.e1s').hover(function() {
+    		$('.mask').html("<br/><br/>Text");
+    		$('.mask').css('height',137);
+    		
+    	});
+    	$('.e1s').mouseleave(function() {
+    		$('.mask').css('height',0);
+    		$('.mask').html(" ");
+    	});
+    	setTimeout(function(){
+		$('.f11').attr("src", "pictures/Text.jpg");
+    	$('.f11').removeAttr('flipped');
+		
+		setTimeout(function(){
+   			$('.f12').attr("src", "pictures/f1/f12.jpg");
+    		$('.f12').removeAttr('flipped');
+    		setTimeout(function(){
+			
+   				$('.f13').attr("src", "pictures/f1/f13.jpg");
+    			$('#e14').removeAttr('flipped');
+    			
+    			setTimeout(function(){
+			
+   					$('.f14').attr("src", "pictures/f1/f14.jpg");
+    				$('#e13').removeAttr('flipped');
+    				
+    				setTimeout(function(){
+			
+   						$('.f15').attr("src", "pictures/f1/f15.jpg");
+    					$('#e16').removeAttr('flipped');
+    					
+    					setTimeout(function(){
+			
+   							$('.f16').attr("src", "pictures/f1/f16.jpg");
+    						$('#e15').removeAttr('flipped');
+    						
+    						setTimeout(function(){
+			
+   								$('.f17').attr("src", "pictures/f1/f17.jpg");
+    							$('#e11').removeAttr('flipped');
+    							
+    							setTimeout(function(){
+			
+   									$('.f18').attr("src", "pictures/f1/f18.jpg");
+    								$('.f18').attr('flipped','flipped');
+    								setTimeout(function(){
+			
+   										$('.f19').attr("src", "pictures/f1/f19.jpg");
+    									$('#e12').removeAttr('flipped');
+    								setTimeout(function(){
+			
+   										$('.f110').attr("src", "pictures/f1/f110.jpg");
+    									$('.f110').attr('flipped','flipped');
+  									  	// $('.mask').css('display','inline');
+    								   		},190);
+    									},170);
+    								},150);
+ 							},130);
+ 						},110);
+ 					},90);
+ 				},70);
+			},50);
+			},30);
+   		 },10);
+ 		});
+ 		
+ 		$('#Text').click(function(){
+ 			$('#Text').replaceWith(imagesClone.clone());
+			$('#Text').attr("src", "pictures/Text.jpg");
+			$('#Text').attr("src", "pictures/Text.jpg");
+			//$('.view').removeClass("e1s");
+			//$('.view2').removeClass("mask");
+    	 			setTimeout(function(){
+
+   				$('#e11').attr("src", "pictures/e1/e11.jpg");
+ 				$('#e11').attr('flipped','flipped');
+ 			
+ 			setTimeout(function(){
+    			$('#e12').attr("src", "pictures/e1/e12.jpg");
+ 				$('#e12').attr('flipped','flipped');
+    		setTimeout(function(){
+			
+    			$('#e13').attr("src", "pictures/e1/e13.jpg");
+ 				$('#e13').attr('flipped','flipped');
+    			
+    			setTimeout(function(){
+			
+    				$('#e14').attr("src", "pictures/e1/e14.jpg");
+ 					$('#e14').attr('flipped','flipped');
+    				
+    				setTimeout(function(){
+			
+    					$('#e15').attr("src", "pictures/e1/e15.jpg");
+ 						$('#e15').attr('flipped','flipped');
+    					
+    					setTimeout(function(){
+			
+    						$('#e16').attr("src", "pictures/e1/e16.jpg");
+ 							$('#e16').attr('flipped','flipped');
+    						
+    						setTimeout(function(){
+			
+    							$('#e17').attr("src", "pictures/e1/e17.jpg");
+ 								$('#e17').attr('flipped','flipped');
+    							
+    							setTimeout(function(){
+			
+    								$('#e18').attr("src", "pictures/e1/e18.jpg");
+ 									$('#e18').attr('flipped','flipped');
+ 									
+ 									setTimeout(function(){
+			
+    									$('#e19').attr("src", "pictures/e1/e19.jpg");
+ 										$('#e19').attr('flipped','flipped');
+ 										
+ 									setTimeout(function(){
+			
+    									$('#e110').attr("src", "pictures/e1/e110.jpg");
+ 										$('#e110').attr('flipped','flipped');
+ 											},190);
+ 										},170);
+    								},150);
+ 							},130);
+ 						},110);
+ 					},90);
+ 				},70);
+			},50);
+			},30);
+			},10);});
+			
+			
+ 			});},delay);
+			
+		
+	</script>	
+	
+		<link href="stylesheet/global.css" rel="stylesheet" type="text/css" >
+
+
+<title>Text</title>
+</head>
+<body style="min-width:800px;padding: 100px; padding-top: 0;padding-bottom: 0;margin-bottom: 0">
+	<div id="all" style="width: 940px; margin-left: auto; margin-right: auto; position: relative;height:1520px;overflow:hidden; padding-bottom: 0; margin-bottom: 0">
+	<div id="header" style="height:30px; margin-bottom: 10px; width: 100%">
+		<div id="main-logo" style="float: left; padding-top: 0; margin-top: 0">
+			<a href="#"><img style="width: 170px;" class="logo" src="pictures/icon/logo.png" alt="Could Not Load the Image!"/></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="height: 70px;" src="pictures/icon/shoar.jpg" alt="No Image View!"/>
+		</div>
+		<div dir="rtl" style="float: right; padding-top: 5px;">
+			<!-- <div id="feed">
+				<img style="width: 20px; margin-left: 10px;" class="Logo" src="pictures/icon/facebook.png" alt="Could Not Load the Image!"/>
+				<img style="width: 20px; margin-left: 10px;" class="Logo" src="pictures/icon/youtube.png" alt="Could Not Load the Image!"/>
+				<img style="width: 20px; margin-left: 10px;" class="Logo" src="pictures/icon/insta.png" alt="Could Not Load the Image!"/>
+				<img style="width: 20px; margin-left: 10px;" class="Logo" src="pictures/icon/vimeo.png" alt="Could Not Load the Image!"/>
+				<img style="width: 35px; margin-left: 10px;" class="Logo" src="pictures/icon/imdb.png" alt="Could Not Load the Image!"/>
+			</div> -->
+			<nav class="social-nav" style="">
+			<ul>
+				<li><a href="#"><img src="pictures/icon/icon-imdb.png" /></a></li>
+				<li><a href="#"><img src="pictures/icon/icon-vimeo.png" /></a></li>
+				<li><a href="#"><img src="pictures/icon/icon-instagram.png" /></a></li>
+				<li><a href="#"><img src="pictures/icon/icon-youtube.png" /></a></li>
+				<li><a href="#"><img src="pictures/icon/icon-facebook.png" /></a></li>
+			</ul>
+		</nav>
+
+	
+	<div class="navigators" style="position:relative;margin-top:20px; right: 1px; top: 40px" >
+				<span class="first" >
+				<a href="#" style="text-decoration:none;padding:5px; padding-left: 9px; color: #88b7d5;" class="l">Text<img style="position:relative; top:3px; width: 10px; right:5px;" class="Logo" src="pictures/icon/triangle.png" alt="Could Not Load the Image!"/>
+				</a>
+					<span class=hidden style=" line-height: 27px; width: auto;">
+						<a href="Text.html" style="text-decoration:none;" class="t">
+				Text</a>
+					<br>
+						<a href="page1.html" style="text-decoration:none;" class="t">
+				Text</a>
+				
+					<br>
+						<a href="page2.html" style="text-decoration:none;" class="t">
+				Text</a>
+				<br/>
+				<a href="#" style="text-decoration:none;" class="t">
+				Text</a>
+				<br/>
+				<a href="Text.html" style="text-decoration:none;" class="t">
+				Text</a>
+				</span>
+				</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="navigator" style="position:relative;top:40px;right:100px;">
+				<span class=first>
+					<a href="#" style="text-decoration:none;color: #88b7d5;padding:5px; padding-left: 0px;" class="l">&nbsp;
+
+				Text	<img style="position:relative; top:3px; width: 10px; margin-right:5px;margin-left:5px;" class="Logo" src="pictures/icon/triangle.png" alt="Could Not Load the Image!"/>&nbsp;&nbsp;
+
+					</a>
+					
+						<span class=hidden1 style="height: 75px; ;line-height: 27px; padding:0;text-align: center;right: -43px;padding-top: 15px;">
+							<div style="">
+							<a href="#" style="text-decoration:none;line-height: 24px" class="t">Text</a>
+							<br>
+							<a href="#" style="text-decoration:none;line-height: 24px;" class="t">Text</a>
+							<br>
+							<a href="#.html" style="text-decoration:none;line-height: 24px;" class="t">Text</a>
+							</div>
+					<br>
+				</span>
+				</div>
+				
+				<div class="navigators" style="position:relative;top:40px;right:170px;">
+				<span class=first>
+				<a href="#" style="text-decoration:none;color: #88b7d5;padding:5px;" class="l">
+&nbsp;&nbsp;
+
+				Text	<img style="position:relative; top:3px; width: 10px; margin-right:5px;margin-left:5px;" class="Logo" src="pictures/icon/triangle.png" alt="Could Not Load the Image!"/>
+				</a>
+				<span class=hidden2 style=" line-height: 27px; width: auto">
+					<a href="page3.html" style="text-decoration:none;" class="t">Text</a>
+					<br>
+					<a href="page4.html" style="text-decoration:none;" class="t">Text</a>
+					<br>
+					<a href="c1.html" style="text-decoration:none;" class="t">Text</a>
+					<br>
+					<a href="Text.html" style="text-decoration:none;" class="t">Text</a>
+					<br>
+					<a href="#" style="text-decoration:none;" class="ts">Text <span class="ts1">Text</span></a>
+					<br>
+
+
+
+
+				</span>
+				</span>
+				</span>
+								
+			
+				
+				
+			</div>
+		
+		</div>
+		
+	</div><br/><br/>
+	<div id="toolbar" style="height:39px; width:inherit; margin-bottom:0;position:relative;bottom: -25px;">
+	<a href="#"><img id="miels" style="position:absolute; right:0;" src="pictures/icon/filmButton.jpg" /></a>
+	<a href="#"><img id="f1-office" style="position:absolute; left:0;" src="pictures/icon/f1Button.jpg" /></a>
+	</div>
+	<br /><br /><br />
+	
+	<div id="images" style="position:relative; top: -45px; display:table; width: 940px;margin-top: 0; white-space: nowrap;">
+		<div class="top" style="display: table-row;">
+		<div style=" display:table-cell;">
+			<img id="e17" class="f11" align="top" style="margin: 0; width: 188px; height:137px;" src="pictures/back/7.jpg" alt=""/>
+			<img id="e18" align="baseline" style="position:relative; left:-192px; margin: 0; width: 188px; height:137px;" src="pictures/back/8.jpg" alt=""/>
+			<img id="e14" class="f13" style="position:relative; left: -192px; margin: 0; width: 184px; height: 277px;" src="pictures/back/4.jpg" alt=""/>
+			<img id="e13" class="f14" style="position:relative; left:-192px; margin: 0; width: 184px; height: 277px;" src="pictures/back/3.jpg" alt=""/>
+			<img id="e11" class="f17" style="position:relative; left: -192px; margin: 0; width: 372px; height: 277px;" src="pictures/back/1.jpg" alt=""/>
+			<img class="f18" align="baseline" style="display:none; position:relative; left:-192px; margin: 0; width: 188px; height:137px;" src="pictures/f1/f18.jpg" alt=""/>
+		</div>
+		
+		</div>
+		<div class="bottom" style="display: table-row;">
+		<div style=" display:table-cell;">
+			<img align="top" id="e19" class="f12" style="margin: 0; width: 188px; height:137px;" src="pictures/back/9.jpg" alt=""/>
+			<img id="e110" align="baseline" style="position:relative; left:-192px; margin: 0; width: 188px; height:137px;" src="pictures/back/10.jpg" alt=""/>
+			<img id="e16" class="f15" style="position:relative; left: -192px; margin: 0; width: 184px; height: 277px;" src="pictures/back/6.jpg" alt=""/>
+			<img id="e15" class="f16" style="position:relative; left:-192px; margin: 0; width: 184px; height: 277px;" src="pictures/back/5.jpg" alt=""/>
+			<!-- <span class="view second-effect e1s" style=""> -->
+			<img id="e12" class="f19" style="position:relative; left: -192px; margin: 0; width: 372px; height: 277px;" src="pictures/back/2.jpg" alt=""/>
+			<!-- <span class="view2 mask farsi" style=""><br/><br/></span></span> -->
+			<img class="f110" align="baseline" style="display:none; position:relative; left:-192px; margin: 0; width: 188px; height:137px;" src="pictures/f1/f110.jpg" alt=""/>
+			
+		</div>
+		</div>
+	</div>
+	<div id="bar" style="display: table; margin-top: 20px; margin-bottom: 40px;border-top-style:solid; border-top-width: 2px; border-top-color: gray; padding-top: 20px;position: relative; top: -40px;">
+		<div style="display: table-row;">
+			<div id="a11" style="display: table-cell;border-right-style: solid; border-right-width: 4px; border-right-color: white;position: relative">
+			<a href="#"><img id="a1" style="width: 232px; height: 160px;" src="pictures/bar/a1.jpg" alt=""/>
+			<div class="view11 masks3 farsi e1s" style="width:115px;position: absolute; left: 0; top: -10px;"><br/><br/></div>
+			<div class="view12 masks3 farsi e1s" style="width:115px;position: absolute; right: 0; top: -10px;"><br/><br/></div>
+			<div class="view13 masks3 farsi e1s" style="width:232px; position: absolute; left: 0; bottom: -4px;"><br/><br/></div>
+			</a></div>
+			<div id="c11" style="display: table-cell; border-right-style: solid; border-right-width: 4px; border-right-color: white;position: relative">
+			<a href="c1.html"><img id="c1" style="width: 232px; height: 160px;" src="pictures/bar/c1.jpg" alt=""/>
+			<div class="view2 masks farsi e1s" style="position: absolute; top: -10px; left: 0;"><br/><br/></div>
+			</a></div>
+			<div id="d11" style="display: table-cell; border-right-style: solid; border-right-width: 4px; border-right-color: white; position: relative">
+			<a href="page4.html"><img id="d1" style=" width: 232px; height: 160px;" src="pictures/bar/d1.jpg" alt=""/>
+			<div class="view3 masks farsi e1s" style="position: absolute; top: -10px; left: 0"><br/><br/></div>
+			</a></div>
+			<div id="b11" style="display: table-cell; position: relative">
+			<a href="page3.html"><img id="b1" style="width: 232px; height: 160px;" src="pictures/bar/b1.jpg" alt=""/>
+			<div class="view4 masks farsi e1s" style="position: absolute; top: -10px; left: 0"><br/><br/></div>
+			</a></div>
+
+		</div>
+		
+	</div>
+				<h3 dir="rtl" id="archive" style="color:black; font-size: 16px; float: right;position: relative; top: -68px;">Text </h3>
+	<div id="table-wrapper" style="position: relative; right: -63px; top: -25px;">
+  <div id="table-scroll">
+    <table>
+        
+        <tbody>
+<tr> <td class="farsi"><a href="g11.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g11.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g12.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g12.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g13.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g13.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g14.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g14.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g15.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g15.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g16.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g16.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g17.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g17.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g18.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g18.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g19.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g19.jpg" alt="No Image View!"/></td> </tr>
+<tr> <td class="farsi"><a href="g110.html"><span class="header">Text</span></a></td> <td style="border: none"><img style="width: 65px; height: 65px;" src="pictures/g1/g110.jpg" alt="No Image View!"/></td> </tr>
+
+        </tbody>
+    </table>
+  </div>
+</div>
+
+	<div style="width: auto; position: relative; top: -75px;">
+	<div id="ticket" style="position:relative; float:left; top: -253px;">
+		<img style="position:relative; top: -6px; width: 42px; height: 40px;" src="pictures/icon/ticket.jpg" alt="No Image View!"/>
+		<div dir="rtl" style="position:relative;float: right;top:-5px ;width: 2px; height: 40px; background-color: gray"> </div>
+		<div style="position:relative;float: left;top:-5px; left:57px; width: 2px; height: 40px; background-color: gray"> </div>
+		<div dir="rtl" class="empty-f1" style="border-left-style:solid;border-left-color:white;border-left-width:2px;position:relative;top:-5px;height:40px; width:98px; float: right; padding:5px;"> Text</div>
+		<div dir="rtl" class="empty-f1" style="border-left-style:solid;border-left-color:white;border-left-width:2px;position:relative;top:-5px;height:40px; width:50px; float: right; padding:5px;text-align: center"> Text</div>
+		<div dir="rtl" class="empty-f1" style="position:relative;top:-5px;height:40px; width:40px; float: right; padding:5px; margin-left:2px;text-align: center"> Text</div>
+		<div dir="rtl" class="empty-f1" style="text-align: center ;position:relative;top:-5px;height:40px; width:40px; float: right; padding:5px; margin-left:15px;color: #F08070"> Text</div>
+	</div>
+	<div id="buy" style="position:relative; float:left; top: -284px;">
+		<br /><br />
+		<img style="position:relative; top: -6px; width: 42px; height: 45px;" src="pictures/icon/shop.jpg" alt="No Image View!"/>
+		<div dir="rtl" style="position:relative;float: right;top:-5px ;width: 2px; height: 40px; background-color: gray"> </div>
+		<div style="position:relative;float: left;top:-5px; left:57px; width: 2px; height: 40px; background-color: gray"> </div>
+		<div dir="rtl" class="empty-f1" style="border-left-style:solid;border-left-color:white;border-left-width:2px;position:relative;top:-5px;height:40px; width:120px; float: right; padding:5px;"> Text</div>
+		<div dir="rtl" class="empty-f1" style="text-align:center;border-left-style:solid;border-left-color:white;border-left-width:2px;position:relative;top:-5px;height:40px; width:80px; float: right; padding:5px;"> Text</div>
+		<div dir="rtl" class="empty-f1" style="text-align:center; position:relative;top:-5px;height:40px; width:40px; float: right; padding:5px; margin-left:15px;color: #F08070"> Text</div>
+	</div>
+	<div id="vod" style="position:relative; float:left; top: -320px;">
+		<br /><br />
+		<img style="position:relative; top: -6px; width: 42px; height: 45px;" src="pictures/icon/vod.jpg" alt="No Image View!"/>
+		<div dir="rtl" style="position:relative;float: right;top:-5px ;width: 2px; height: 40px; background-color: gray"> </div>
+		<div style="position:relative;float: left;top:-5px; left:57px; width: 2px; height: 40px; background-color: gray"> </div>
+		<div dir="rtl" class="empty-f1" style="border-left-style:solid;border-left-color:white;border-left-width:2px;position:relative;top:-5px;height:40px; width:120px; float: right; padding:5px;"> Text</div>
+		<div dir="rtl" class="empty-f1" style="text-align:center;border-left-style:solid;border-left-color:white;border-left-width:2px;position:relative;top:-5px;height:40px; width:80px; float: right; padding:5px;"> Text</div>
+		<div dir="rtl" class="empty-f1" style="color:#F08070; position:relative;top:-5px;height:40px; width:40px; float: right; padding:5px; margin-left:15px;text-align: center"> Text</div>
+	</div>
+	
+	</div>
+	<div id="footer" style="width: inherit;font: 12px BNazanin, Tahoma, Geneva, sans-serif;color:gray;border-top-color: gray; border-top-style: solid; border-top-width: 1px;position: absolute; top:1320px; padding-top: 0">
+		<div style="float: left; margin-top: 4px;">
+			<p style="padding-bottom:3px; border-bottom-color: gray; border-bottom-style: dotted; border-bottom-width: 1px;"><a href="serach.php">Text </a>	<img align="top" style="width: 30px; height: 21px; margin-left: 97px;" src="pictures/icon/search.jpg" alt="No Image View!"/> </p>
+			<p style="padding-bottom:3px; border-bottom-color: gray; border-bottom-style: dotted; border-bottom-width: 1px;"><a href="register.php"> Text </a>	<img align="top" style="width: 30px; height: 21px; margin-left: 100px;" src="pictures/icon/member.jpg" alt="No Image View!"/> </p>
+			<p style="padding-bottom:3px; border-bottom-color: gray; border-bottom-style: dotted; border-bottom-width: 1px;"><a href="job.php">Text </a>	<img align="top" style="width: 30px; height: 21px; margin-left: 97px;" src="pictures/icon/work.jpg" alt="No Image View!"/> </p>
+		</div>
+		<div style="float: right; width: auto;right: -35px; position: relative; top: -5px;">
+		
+		<div dir="rtl" style="float: left; width: auto">
+			<h4>Text</h4>
+			<a href="page3.html">Text</a><br />
+			<a href="page4.html">Text</a><br />
+			<a href="c1.html">Text</a><br />
+			<a href="Text.html">Text</a><br />
+			<a href="#">Text <span class="ts1">Text</span></a>
+		</div>
+		<div style="float: right;margin: 50px;margin-top: 0">
+		<div dir="rtl" style="position:relative; float: left;">
+			<h4>Text</h4>
+			<a href="#">Text</a><br />
+			<a href="#">Text</a><br />
+			<a href="#.html">Text</a>
+		</div>
+		<div dir="rtl" style="float: right;margin-left: 20px; margin-right: 0;padding-right: 0;width: auto">
+			<h4>Text</h4>
+			<a href="about.html">Text</a><br />
+			<a href="page1.html">Text </a><br />
+			<a href="page2.html">Text </a><br />
+			<a href="#">Text </a><br />
+			<a href="Text.html">Text</a>
+		</div>
+		</div>
+	</div>
+	</div>
+	
+	</div>
+	
+	<span style="position: absolute; left: -99999px; width: 1px; overflow: hidden">
+		<!-- Begin WebGozar.com Counter code -->
+		<script type="text/javascript" language="javascript" src="http://www.webgozar.ir/c.aspx?Code=3484063&amp;t=counter" ></script>
+		<noscript><a href="http://www.webgozar.com/counter/stats.aspx?code=3484063" target="_blank">&#1570;&#1605;&#1575;&#1585;</a></noscript>
+		<!-- End WebGozar.com Counter code -->
+	</span>
+	
+</body>
+</html>
